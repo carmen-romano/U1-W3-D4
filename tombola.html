@@ -9,13 +9,28 @@
   </head>
   <body>
     <img src="/assets/logo-tombol.png" width="300px" alt="numeri-tombola" />
-    <h1>tombola</h1>
+    <h1>TOMBOLA</h1>
+
+    <form>
+      <label for="numberInput" class="playerInput"
+        >Seleziona il numero di cartelle
+        <input
+          type="number"
+          id="numberInput"
+          name="numberInput"
+          min="1"
+          step="1"
+          value="1"
+        />
+        <button type="button" id="btnNumeroCartelle">Invia</button>
+      </label>
+    </form>
 
     <div id="tombola"></div>
 
-    <div id="estrazione">
-      <button type="button" id="button-table">Estrai un numero</button>
-    </div>
+    <button type="button" id="button-table">Estrai un numero</button>
+    <div id="estrazione"></div>
+    <div id="containerCartelle"></div>
     <script src="/assets/tombola.js"></script>
   </body>
 </html>
